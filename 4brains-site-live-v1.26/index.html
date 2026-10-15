@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>4Brains — Where innovation meets precision</title>
+  <meta name="description" content="Interactive, kinetic and AI experiences for live events: the ideas that make a room stop, and the engineering that makes them work every time. 42 experiences, designed, built and run by 4Brains. Mumbai, Delhi NCR, Bengaluru.">
+  <!-- TODO: set the final hosting URL before launch (also used by the QR code when brand.qrUrl is empty) -->
+  <link rel="canonical" href="https://4brains-catalogue.vercel.app/">
+  <meta name="theme-color" content="#050607">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="4Brains Technologies">
+  <meta property="og:title" content="4Brains — Where innovation meets precision">
+  <meta property="og:description" content="42 interactive, kinetic and AI experiences for live events, designed, built and run by the same people. Browse the catalogue.">
+  <meta property="og:url" content="https://4brains-catalogue.vercel.app/">
+  <meta property="og:image" content="https://4brains-catalogue.vercel.app/assets/brand/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="4Brains — Where innovation meets precision">
+  <meta name="twitter:description" content="42 interactive, kinetic and AI experiences for live events. Browse the catalogue.">
+  <meta name="twitter:image" content="https://4brains-catalogue.vercel.app/assets/brand/og-image.png">
+
+  <!-- Icons & install -->
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/brand/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="4Brains">
+
+  <!-- Fonts: Anton (display, as in the deck) · Space Grotesk (text) · Space Mono (labels). README covers self-hosting. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400..700&family=Space+Mono:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "4Brains Technologies Private Limited",
+    "url": "https://www.4brains.in",
+    "logo": "https://4brains-catalogue.vercel.app/assets/brand/logo-mark.png",
+    "email": "contact@4brains.in",
+    "telephone": "+91 22 4503 9158",
+    "sameAs": ["https://www.instagram.com/4brains.in", "https://in.linkedin.com/company/4brains-technologies-private-limited", "https://www.youtube.com/@4brainstechnologies"],
+    "address": [
+      {"@type": "PostalAddress", "addressLocality": "Navi Mumbai", "addressRegion": "Maharashtra", "postalCode": "400703", "addressCountry": "IN"},
+      {"@type": "PostalAddress", "addressLocality": "Bengaluru", "addressRegion": "Karnataka", "postalCode": "560041", "addressCountry": "IN"},
+      {"@type": "PostalAddress", "addressLocality": "Noida", "addressRegion": "Uttar Pradesh", "postalCode": "201309", "addressCountry": "IN"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogue">Skip to the catalogue</a>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="site-top">
+    <div class="nav__inner">
+      <a class="brand" href="#site-top" aria-label="4Brains — top of page">
+        <img src="assets/brand/logo-lockup.png" alt="4Brains" height="26">
+      </a>
+      <div class="nav__right">
+        <nav class="nav__links" aria-label="Sections">
+          <a href="#families">Work</a>
+          <a href="#intro">About</a>
+          <a href="#capabilities">Expertise</a>
+          <a href="#process">Process</a>
+          <a href="#proof">Clientele</a>
+          <a href="#contact" class="nav__cta">Contact</a>
+        </nav>
+        <span class="nav__sep" aria-hidden="true"></span>
+        <button class="nav__present" type="button" data-present aria-label="Open Present mode (full-screen tour)">Present <span class="dot" aria-hidden="true"></span></button>
+        <button class="nav__menu" id="nav-menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-sheet"></button>
+      </div>
+    </div>
+  </header>
+  <nav class="nav__sheet" id="nav-sheet" aria-label="Sections (mobile)">
+    <a href="#families">Work</a>
+    <a href="#intro">About</a>
+    <a href="#capabilities">Expertise</a>
+    <a href="#process">Process</a>
+    <a href="#proof">Clientele</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <span class="label hero__eyebrow" id="hero-eyebrow"></span>
+          <h1 class="hero__title" id="hero-title"></h1>
+          <p class="hero__sub" id="hero-sub"></p>
+          <div class="hero__ctas" id="hero-ctas"></div>
+        </div>
+        <div class="hero__render" id="hero-render"></div>
+      </div>
+      <a class="hero__cue" href="#numbers" aria-label="Scroll to the numbers"><span></span></a>
+    </section>
+
+    <!-- ===================== NUMBERS ===================== -->
+    <section class="numbers" id="numbers" aria-label="In numbers">
+      <div class="wrap numbers__grid" id="hero-stats"></div>
+    </section>
+
+    <!-- ===================== FAMILIES ===================== -->
+    <section class="sec" id="families" aria-labelledby="families-title">
+      <div class="wrap">
+        <div class="sec__head">
+          <span class="label">Nº01 / The work</span>
+          <h2 class="display sec__title" id="families-title"></h2>
+        </div>
+        <div class="xp" id="family-xp" role="list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CATALOGUE ===================== -->
+    <section class="sec sec--tight" id="catalogue" aria-labelledby="catalogue-title">
+      <div class="wrap">
+        <div class="sec__head sec__head--row">
+          <div>
+            <span class="label">Nº02 / Catalogue</span>
+            <h2 class="visually-hidden" id="catalogue-title">Catalogue</h2>
+            <div class="filters" id="filters" role="group" aria-label="Filter the catalogue"></div>
+          </div>
+          <button class="btn btn--ghost" type="button" data-present>Present mode</button>
+        </div>
+        <span class="visually-hidden" id="catalogue-count">42</span>
+        <div id="catalogue-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== INTRO / ABOUT ===================== -->
+    <section class="sec" id="intro" aria-label="About 4Brains">
+      <div class="wrap grid-4-8">
+        <span class="label">Nº03 / About</span>
+        <div>
+          <p class="lit" id="intro-lead"></p>
+          <p class="lit lit--punch" id="intro-punch"></p>
+          <div class="fit" id="intro-fit"></div>
+          <div class="rows" id="intro-links"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERTISE ===================== -->
+    <section class="sec" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="wrap grid-4-8">
+        <div>
+          <span class="label">Nº04 / Expertise</span>
+          <h2 class="display sec__title" id="capabilities-title"></h2>
+          <p class="sec__lede" id="capabilities-text"></p>
+        </div>
+        <ol class="pillars" id="pillars"></ol>
+      </div>
+    </section>
+
+    <!-- ===================== THE MOMENT (full-bleed) ===================== -->
+    <section class="moment" id="moment" aria-label="Spectra">
+      <div class="moment__media" id="moment-media"></div>
+      <div class="wrap moment__text"><span class="label">Spectra</span><p class="moment__line" id="moment-line"></p></div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="sec block" id="process" aria-labelledby="process-title">
+      <div class="wrap process">
+        <div class="process__intro">
+          <span class="label label--ink">Nº05 / How we work</span>
+          <h2 class="display block__title" id="process-title">Brief to show day, without the hand-offs.</h2>
+          <p class="block__lede">One team has the idea, builds it, tests it and runs it. Nothing is handed to another company, so nothing gets lost on the way.</p>
+          <div class="process__count" aria-hidden="true"><span id="process-now">01</span><span>/ 05</span></div>
+        </div>
+        <ol class="rail" id="steps"></ol>
+      </div>
+      <div class="wrap"><ul class="facts" id="facts"></ul></div>
+    </section>
+
+    <!-- ===================== CLIENTELE ===================== -->
+    <section class="sec" id="proof" aria-labelledby="proof-title">
+      <div class="wrap">
+        <div class="sec__head">
+          <span class="label">Nº06 / Our clientele</span>
+          <h2 class="display sec__title" id="proof-title"></h2>
+          <p class="sec__lede" id="proof-text"></p>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="wall-head"><span class="label" id="agencies-label"></span><button class="wall__pause" type="button" data-pause="partners" aria-pressed="false" hidden>Pause</button></div>
+      </div>
+      <div class="river" id="partners" aria-label="Agencies that bring us in"><div class="river__track" id="partners-track"></div></div>
+      <div class="wrap">
+        <div class="wall-head"><span class="label" id="brands-label"></span><button class="wall__pause" type="button" data-pause="brands" aria-pressed="false" hidden>Pause</button></div>
+        <div class="flip" id="brands">
+          <p class="flip__line"><span class="flip__lead" id="flip-lead"></span> <span class="flip__word" id="flip-word" aria-live="off"></span></p>
+          <p class="flip__note" id="flip-note" aria-live="polite"></p>
+        </div>
+        <div class="wall-head"><span class="label" id="industries-label"></span></div>
+        <p class="industries" id="industries"></p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="sec" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <span class="label">Nº07 / Start a brief</span>
+        <h2 class="display contact__title" id="contact-title"></h2>
+        <div class="contact__grid">
+          <div class="contact__copy">
+            <p class="sec__lede" id="contact-text"></p>
+            <div class="direct" id="direct"></div>
+            <div class="qr-card" id="qr"></div>
+          </div>
+          <form class="form" id="brief" novalidate>
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field field--full"><label for="f-company">Company or agency</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+            <div class="field field--full"><label for="f-details">The brief</label><textarea id="f-details" name="details" placeholder="Audience, room, date. Early ideas welcome."></textarea></div>
+            <input type="hidden" id="f-activity" name="activity"><input type="hidden" id="f-type" name="type"><input type="hidden" id="f-phone" name="phone"><input type="hidden" id="f-when" name="when">
+            <div class="form__foot">
+              <button class="btn btn--mint" type="submit" id="brief-submit">Send the brief</button>
+              <p class="small">We reply from contact@4brains.in. No newsletter, no list.</p>
+            </div>
+            <div class="form__done" id="brief-done" aria-live="polite">
+              <p class="small" id="brief-status"></p>
+              <pre id="brief-text"></pre>
+              <div class="row"><button class="copy-btn" type="button" id="brief-copy">Copy the brief</button></div>
+            </div>
+          </form>
+        </div>
+        <ul class="offices offices--row" id="offices"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/brand/logo-lockup-tagline.png" alt="4Brains — Where innovation meets precision" height="34">
+        <p>Creative minds. Engineering precision. Experiences that stay with you.</p>
+        <p class="small" id="footer-contact" style="margin-top:14px"></p>
+      </div>
+      <div><h4>Follow the work</h4><ul id="footer-social"></ul></div>
+      <div><h4>Offices</h4><ul id="footer-offices"></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__tag">Imagination, engineered.</span>
+      <span>© <span id="footer-year"></span> 4Brains Technologies Private Limited · Built in India. Made to move people.</span>
+    </div>
+  </footer>
+
+  <!-- ===================== PRESENT MODE ===================== -->
+  <div class="present" id="present" hidden role="dialog" aria-modal="true" aria-label="Present mode">
+    <header class="present__hud">
+      <span class="brand"><img src="assets/brand/logo-lockup.png" alt="4Brains" height="24"></span>
+      <div class="present__chapter"><span class="dot" aria-hidden="true"></span><span class="present__chapter-name"></span></div>
+      <button class="present__exit" type="button" data-exit>Exit <kbd>Esc</kbd></button>
+    </header>
+    <div class="present__stage"></div>
+    <footer class="present__foot">
+      <div class="present__arrows">
+        <button class="present__arrow" type="button" data-prev aria-label="Previous"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l-6 6 6 6"/></svg></button>
+        <button class="present__arrow" type="button" data-next aria-label="Next"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></button>
+      </div>
+      <div class="present__progress" aria-hidden="true"></div>
+      <div class="present__meta">
+        <span class="present__auto">Auto</span>
+        <span class="present__counter">01 / 01</span>
+        <div class="present__qr"></div>
+      </div>
+    </footer>
+    <div class="present__live" aria-live="polite"></div>
+  </div>
+
+  <!-- Data first, then the QR encoder, then the app -->
+  <script src="js/data.js"></script>
+  <script src="js/qr.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

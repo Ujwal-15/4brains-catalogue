@@ -1,0 +1,15 @@
+{
+  "name": "4Brains — Catalogue",
+  "short_name": "4Brains",
+  "description": "Interactive installations, AR/VR, kinetic stages and live AI for events — the 4Brains catalogue.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#0A0B0D",
+  "theme_color": "#0A0B0D",
+  "icons": [
+    { "src": "assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
