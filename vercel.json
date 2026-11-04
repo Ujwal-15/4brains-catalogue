@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/4brains-site-live-v1.26/index.html" },
-    { "source": "/(.*)", "destination": "/4brains-site-live-v1.26/$1" }
+    { "source": "/assets/(.*)", "destination": "/4brains-site-live-v1.26/assets/$1" },
+    { "source": "/manifest.webmanifest", "destination": "/4brains-site-live-v1.26/manifest.webmanifest" }
   ]
 }
