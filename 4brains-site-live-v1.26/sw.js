@@ -8,7 +8,7 @@
    DEPLOYING AN UPDATE: bump VERSION below. Old caches are deleted on activate.
    Only registers over http(s) — opening index.html from disk skips it.
    ========================================================================== */
-const VERSION = "v1.27";
+const VERSION = "v1.28";
 const SHELL = [
   './', 'index.html', 'experience-centres.html', 'manifest.webmanifest',
   'css/styles.css',
@@ -33,7 +33,9 @@ self.addEventListener('fetch', event => {
   const isOwn = url.origin === self.location.origin;
   if (!isFont && !isOwn) return;
 
-  // Cache-first for everything we own and for fonts; refresh in the background.
+  // Pages, scripts and styles: network first (so an update shows on the very next load),
+  // cache as the offline fallback. Renders, the PDF, brand images and fonts: cache first.
+  const shell = isOwn && (req.mode === 'navigate' || /\.(html|js|css|webmanifest)$/.test(url.pathname) || url.pathname.endsWith('/'));
   event.respondWith(
     caches.match(req).then(cached => {
       const network = fetch(req).then(res => {
@@ -43,7 +45,7 @@ self.addEventListener('fetch', event => {
         }
         return res;
       }).catch(() => cached);
-      return cached || network;
+      return shell ? network.then(res => res || cached) : (cached || network);
     })
   );
 });
